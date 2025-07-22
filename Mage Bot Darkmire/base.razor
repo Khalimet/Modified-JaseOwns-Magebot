@@ -2643,11 +2643,7 @@ if jaseowns_BOT_TARGET != 0 and find jaseowns_BOT_TARGET ground -1 -1 12
         
         getlabel jaseowns_BOT_TARGET target_name
         overhead "Target: {{target_name}}" 88
-        
-        # Convert target name to lowercase for case-insensitive matching
-        @setvar! target_name_lower target_name
-        lowercase target_name_lower
-        
+
         # High armor, low MR creatures in Darkmire
         if "antlion" in target_name_lower or "arachnai ravager" in target_name_lower or "arachnai soldier" in target_name_lower or "creeping earth" in target_name_lower or "creeping soil" in target_name_lower or "darkmire bear druid" in target_name_lower or "darkmire hunter" in target_name_lower or "darkmire pathfinder" in target_name_lower or "darkmire wolf druid" in target_name_lower or "lord bile" in target_name_lower or "otyugh" in target_name_lower or "swamp dragon" in target_name_lower or "swamp drake" in target_name_lower or "the terrorwood" in target_name_lower or "wildwood guardian" in target_name_lower or "wildwood scourge" in target_name_lower
             overhead "High armor target detected - using penetrating spells!" 88
